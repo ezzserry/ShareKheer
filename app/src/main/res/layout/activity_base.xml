@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_base_drawer" />
+
+    <LinearLayout
+        android:id="@+id/nav2_view"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="البحث"
+            android:textColor="@color/clicked_btn"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:drawable/divider_horizontal_textfield" />
+
+        <TextView
+            android:id="@+id/searchtype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="4dp"
+            android:gravity="top"
+            android:padding="4dp"
+            android:text="النوع"
+            android:textColor="@color/clicked_btn"
+            android:textSize="15sp"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/volunteer_rb"
+            android:gravity="right">
+
+            <RadioButton
+
+                android:id="@+id/volunteer_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="متطوعين"
+                android:textDirection="rtl" />
+
+
+            <RadioButton
+
+                android:id="@+id/donation_rb"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="تبرعات" />
+
+            <RadioButton
+
+                android:id="@+id/both_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الاثنين معا" />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:drawable/divider_horizontal_textfield" />
+
+        <TextView
+            android:id="@+id/searchloc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="4dp"
+            android:text="المحافظة"
+            android:textColor="@color/clicked_btn"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/cities_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:entries="@array/cities"
+            android:gravity="center" />
+
+        <Spinner
+            android:id="@+id/areas_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/searchcities_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="اعرض النتيجة" />
+    </LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

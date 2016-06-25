@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/white"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/loadingpanel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/eventname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/framelayout"
+                android:layout_below="@+id/framelayout"
+                android:padding="18dp"
+                android:text="ssssssssss"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/clicked_btn" />
+
+            <TextView
+                android:id="@+id/eventtime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/framelayout"
+                android:maxLines="1"
+                android:padding="18dp"
+                android:text="Event Time"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/clicked_btn" />
+
+            <TextView
+                android:id="@+id/eventtype_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/framelayout"
+                android:layout_below="@+id/eventname_tv"
+                android:padding="18dp"
+                android:text="Event type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/clicked_btn" />
+
+            <TextView
+                android:id="@+id/eventdate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/eventname_tv"
+                android:padding="18dp"
+                android:text="Event Date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/clicked_btn" />
+
+            <TextView
+                android:id="@+id/eventdesc_tv"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eventtype_tv"
+                android:gravity="center"
+                android:padding="18dp"
+                android:text="description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/eventaddress_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/eventdesc_tv"
+                android:padding="18dp"
+                android:text="address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/clicked_btn" />
+
+            <TextView
+                android:id="@+id/eventarea_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/eventaddress_tv"
+                android:padding="18dp"
+                android:text="area"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/clicked_btn" />
+
+            <TextView
+                android:id="@+id/eventcity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eventaddress_tv"
+                android:layout_toLeftOf="@id/eventarea_tv"
+                android:padding="18dp"
+                android:text="city"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/clicked_btn" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/eventarea_tv"
+                android:orientation="horizontal"
+                android:padding="18dp"
+                android:weightSum="2">
+
+
+                <ImageButton
+                    android:id="@+id/call_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/eventarea_tv"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/call_us_button" />
+
+                <ImageButton
+                    android:id="@+id/route_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/mybutton"
+                    android:gravity="center_vertical"
+                    android:src="@mipmap/etegehat" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Kheir Zone</string>
+    <string name="facebook_app_id">1719224275027278</string>
+    <string name="title_activity_slide_menu_actiivty">SlideMenuActiivty</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_firstname">الاسم</string>
+    <string name="prompt_username">اسم المستخدم</string>
+    <string name="prompt_password">كلمة المرور </string>
+    <string name="prompt_repassword">إعادة كلمة المرور</string>
+    <string name="prompt_email">البريد الالكتروني</string>
+    <string name="prompt_phone_number">رقم الهاتف</string>
+    <string name="prompt_register">تسجيل</string>
+    <string name="prompt_login">دخول</string>
+    <string name="prompt_sign_up">أو يمكنك التسجيل من هنا</string>
+
+    <!-- Event-->
+    <string name="event_name">اسم الحدث </string>
+    <string name="event_desc">وصف الحدث</string>
+    <string name="event_address">مكان الحدث</string>
+    <string name="event_date">تاريخ الحدث</string>
+    <string name="event_time">وقت الحدث</string>
+    <string name="event_phone_number">رقم الهاتف المخصوص للحدث</string>
+
+    <!-- Validation errors-->
+    <string name="error_invalid_email">خطأ في كتابة البريد الالكتروني</string>
+    <string name="error_invalid_password">كلمة المرور قصيرة</string>
+    <string name="error_incorrect_password">يوجد خطأ بكلمة المرور</string>
+    <string name="error_re_password">غير متطابقة مع كلمة المرور السابقة</string>
+    <string name="error_username">ادخل اسم المستخدم</string>
+    <string name="error_empty_email">ادخل بريدك الالكتروني</string>
+    <string name="error_enter_your_name">ادخل اسمك</string>
+
+    <!--Loading-->
+    <string name="wait_please">جاري التحميل</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <!--right slide menu items-->
+    <string-array name="right_titles">
+        <item>الصفحة الرئيسية</item>
+        <item>المناسبات</item>
+        <item>إنشاء مناسبة</item>
+        <item>تسجيل الدخول</item>
+    </string-array>
+    <!--left slide menu items-->
+    <string-array name="left_titles">
+
+    </string-array>
+    <string name="title_activity_base">BaseActivity</string>
+    <string-array name="cities">
+        <item>القاهرة</item>
+        <item>الجيزة</item>
+        <item>الاسكندرية</item>
+    </string-array>
+    <string name="city_prompt">اختر المحافظة</string>
+
+
+    <string name="area_prompt">اختر المنطقة</string>
+    <string name="title_activity_map_fragment">Map</string>
+</resources>
